@@ -22,7 +22,7 @@ Your decision/choice should be one column. Set as a boolean ```0 OR 1 ``` and th
 y = dataset["choice"]
 ```
 
-There is a loop to read your ``` .csv ``` file on the  ```main.py``` script. It'll print out your **whole** file, so keep that in mind.
+There is a loop to read your ``` .csv ``` file on the  ```main.py``` script. It'll print out your **entire** file, so keep that in mind.
 
 
 ## Python modules
