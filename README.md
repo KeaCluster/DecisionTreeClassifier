@@ -1,4 +1,4 @@
-# DecisionTreeClassifier
+# Decision Tree Classifier
 Decision Tree Classifier using python - regression &amp; standard clasification 
 ##### The main.py file will output different .txt files depending on your choice
 
