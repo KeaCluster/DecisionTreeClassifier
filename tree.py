@@ -26,11 +26,20 @@ def classify_Tree():
     conf_matrix = confusion_matrix(y_test, y_pred)
     report = classification_report(y_test, y_pred)
     df = pd.DataFrame({"Actual": y_test, "Predicted": y_pred})
-    print("Confusion Matrix: \n\n", conf_matrix, "\n\n", "Values from table:\n\n ", df, "\n\n" , "Overall report: \n\n", report, file=open('normal_tree.txt','w'))
+    print(
+        "Confusion Matrix: \n\n",
+        conf_matrix,
+        "\n\n",
+        "Values from table:\n\n ",
+        df,
+        "\n\n",
+        "Overall report: \n\n",
+        report,
+        file=open("normal_tree.txt", "w"),
+    )
 
 
-
-def regres_Tree():
+def regress_Tree():
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.30, random_state=0
     )
@@ -41,7 +50,15 @@ def regres_Tree():
     y_pred = regressor.predict(X_test)
     df = pd.DataFrame({"Actual": y_test, "Predicted": y_pred})
     report = classification_report(y_test, y_pred)
-    conf_matrix= confusion_matrix(y_test, y_pred)
-    print("Confusion Matrix: \n\n", conf_matrix, "\n\n", "Values from table:\n\n ", df, "\n\n" , "Overall report: \n\n", report, file=open('regression_tree.txt','w'))
-
-
+    conf_matrix = confusion_matrix(y_test, y_pred)
+    print(
+        "Confusion Matrix: \n\n",
+        conf_matrix,
+        "\n\n",
+        "Values from table:\n\n ",
+        df,
+        "\n\n",
+        "Overall report: \n\n",
+        report,
+        file=open("regression_tree.txt", "w"),
+    )
